@@ -121,11 +121,11 @@ import Hogan from "https://cdn.skypack.dev/hogan.js@3.0.2";
 
 
 
-/// Main function
+/// Main function to render all JSON tags
 
 function renderJSONTags(){
   // selector all tags
-let JSON_Tag = document.querySelectorAll("test")
+let JSON_Tag = document.querySelectorAll("json")
 
 JSON_Tag.forEach(tag => {
   try {
@@ -173,7 +173,7 @@ function handleError(tag, err){
     }
     
     // let developer know in the console!
-      console.error( err.message );
+      console.error( `JSON Tag: Error - ${err.message}`);
     
     // set error attribute - so it can be handled via CSS or JS etc.... 
       setAttribute(tag, "error")
