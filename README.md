@@ -12,11 +12,11 @@
   <br>
   <small> <b><i>Show your support!</i> </b></small>
   <br>
-   <a href="https://github.com/MarketingPipeline/Markdown-Tag">
-    <img title="Star on GitHub" src="https://img.shields.io/github/stars/MarketingPipeline/Markdown-Tag.svg?style=social&label=Star">
+   <a href="https://github.com/MarketingPipeline/JSON-Tag">
+    <img title="Star on GitHub" src="https://img.shields.io/github/stars/MarketingPipeline/JSON-Tag.svg?style=social&label=Star">
   </a>
-  <a href="https://github.com/MarketingPipeline/Markdown-Tag/fork">
-    <img title="Fork on GitHub" src="https://img.shields.io/github/forks/MarketingPipeline/Markdown-Tag.svg?style=social&label=Fork">
+  <a href="https://github.com/MarketingPipeline/JSON-Tag/fork">
+    <img title="Fork on GitHub" src="https://img.shields.io/github/forks/MarketingPipeline/JSON-Tag.svg?style=social&label=Fork">
   </a>
    </p>  
 
@@ -30,7 +30,7 @@ Easily render data from JSON locally or from a API / URL (no JavaScript experien
 
 
 
-You can view a demo of <b><i>JSON Tag</b></i> in use [here.](https://marketingpipeline.github.io/Markdown-Tag)
+You can view a demo of <b><i>JSON Tag</b></i> in use [here.](https://marketingpipeline.github.io/JSON-Tag)
 
 
 How to use <b><i>JSON Tag</b></i>:
@@ -57,9 +57,9 @@ Create a ```<json>``` tag with the attribute ```local-json``` with your variable
 
 
 
-include this [script](https://github.com/MarketingPipeline/Markdown-Tag/blob/main/markdown-tag.js) in your HTML document. 
+include this [script](https://github.com/MarketingPipeline/JSON-Tag/blob/main/dist/json-tag.min.js) in your HTML document. 
          
-    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag@v1.0.0/markdown-tag.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/JSON-Tag@v1.0.0/dist/json-tag.min.js"></script> 
 
 
 <br>
@@ -237,17 +237,16 @@ the [spec](https://github.com/mustache/spec).
 **psstt** - you might find another cool function that <b><i>JSON Tag</b></i> is capable of via Mustache templating language, if you think you came across something & it should be documented or added, feel free to submit a PR or feature request, etc!
  
 
-## Contributing ![GitHub](https://img.shields.io/github/contributors/MarketingPipeline/Markdown-Tag)
+## Contributing ![GitHub](https://img.shields.io/github/contributors/MarketingPipeline/JSON-Tag)
 
 Want to improve this? Create a pull request with detailed changes / improvements! If approved you will be added to the list of contributors of this awesome project!
 
 See also the list of
-[contributors](https://github.com/MarketingPipeline/Markdown-Tag/graphs/contributors) who
+[contributors](https://github.com/MarketingPipeline/JSON-Tag/graphs/contributors) who
 participate in this project.
 
-## License ![GitHub](https://img.shields.io/github/license/MarketingPipeline/markdown-tag)
+## License ![GitHub](https://img.shields.io/github/license/MarketingPipeline/JSON-Tag)
 
 This project is licensed under the GPL-3.0 License - see the
-[LICENSE.md](https://github.com/MarketingPipeline/Markdown-Tag/blob/main/LICENSE) file for
+[LICENSE.md](https://github.com/MarketingPipeline/JSON-Tag/blob/main/LICENSE) file for
 details.
-
