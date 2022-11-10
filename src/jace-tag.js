@@ -1,7 +1,7 @@
 /**!
- * @license Jace-Tag - A JavaScript library to easily render data from JSON locally or from a API / URL on your website inside of a <jace> tag & LOTS more.
+ * @license JSON-Tag - A JavaScript library to easily render data from JSON locally or from a API / URL on your website inside of a <json> tag.
  * VERSION: 1.0.0
- * LICENSE & MORE INFO CAN BE FOUND AT https://github.com/MarketingPipeline/Jace-Tag/
+ * LICENSE & MORE INFO CAN BE FOUND AT https://github.com/MarketingPipeline/JSON-Tag/
  */
 
 
@@ -128,11 +128,11 @@ import Hogan from "https://cdn.skypack.dev/hogan.js@3.0.2";
 
 
 
-/// Main function to render all Jace tags
+/// Main function to render all JSON tags
 
-function renderJaceTags() {
+function renderJSONTags() {
 	// selector all tags
-	let JSON_Tag = document.querySelectorAll("jace")
+	let JSON_Tag = document.querySelectorAll("json")
 
 	JSON_Tag.forEach(tag => {
 		try {
@@ -180,7 +180,7 @@ function renderJaceTags() {
 		}
 
 		// let developer know in the console!
-		console.error(`Jace Tag: Error - ${err.message}`);
+		console.error(`JSON Tag: Error - ${err.message}`);
 
 		// set error attribute - so it can be handled via CSS or JS etc.... 
 		setAttribute(tag, "error")
@@ -192,11 +192,11 @@ function renderJaceTags() {
 	function setAttribute(tag, error) {
 		// function to set rendered attribute 
 		if (error) {
-			tag.setAttribute('jace-error', '')
+			tag.setAttribute('json-error', '')
 
 		} else {
 			// no error occured
-			tag.setAttribute('jace-rendered', '')
+			tag.setAttribute('json-rendered', '')
 		}
 
 
@@ -242,11 +242,11 @@ onDomChange(function() {
 
 	// timeout required for things to work 
 	setTimeout(() => {
-		renderJaceTags()
+		renderJSONTags()
 	}, "1")
 
 
 });
 
 // initialize function - 
-document.addEventListener('DOMContentLoaded', () => renderJaceTags());
+document.addEventListener('DOMContentLoaded', () => renderJSONTags());
