@@ -2,9 +2,9 @@
   
  <head>
    <link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
-   <title>JSON Tag | Demo</title>
+   <title>Jace Tag | Demo</title>
    
-   <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/JSON-Tag@v1.0.0/dist/json-tag.min.js" type="module"></script> 
+   <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Jace-Tag@v1.0.0/dist/jace-tag.min.js" type="module"></script> 
    <script type="module" src="https://cdn.skypack.dev/@github/clipboard-copy-element@1.1.2"></script>
    
   </head>  
@@ -15,9 +15,9 @@
     
   </header>
     <div class="container-lg mx-auto text-white py-6 p-responsive">
-    <h1 class="f00-light">JSON Tag Example</h1>
+    <h1 class="f00-light">Jace Tag Example</h1>
     <p class="f3 mb-4">Easily display JSON data locally or from API / URL in your HTML - no JavaScript knowledge required.</p>
-    <a class="btn btn-transparent link-hover-blue text-normal py-2 mb-6 f4" href="https://github.com/MarketingPipeline/JSON-Tag">View Source Code On GitHub</a>
+    <a class="btn btn-transparent link-hover-blue text-normal py-2 mb-6 f4" href="https://github.com/MarketingPipeline/Jace-Tag">View Source Code On GitHub</a>
   </div>
 </div>
 
@@ -51,11 +51,11 @@
 </svg>
     </clipboard-copy>
   </div></div>
-    <p data-sourcepos="52:1-52:153" dir="auto">Create a <code>&lt;json&gt;</code> tag with the attribute <code>local-json</code> with your variable name of the JSON data - then you can access it like so using pure HTML. Example below - </p>
+    <p data-sourcepos="52:1-52:153" dir="auto">Create a <code>&lt;jace&gt;</code> tag with the attribute <code>local-jace</code> with your variable name of the JSON data - then you can access it like so using pure HTML. Example below - </p>
     
     
-    <div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto"><pre> <span class="pl-kos">&lt;</span><span class="pl-ent">json</span> <span class="pl-c1">local-json</span>="<span class="pl-s">YourJSONData</span>"<span class="pl-kos">&gt;</span>@{{example}} @{{example2}}.<span class="pl-kos">&lt;/</span><span class="pl-ent">json</span><span class="pl-kos">&gt;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" <json local-json=&quot;YourJSONData&quot;>@{{example}} @{{example2}}.</json>" tabindex="0" role="button" style="display: inherit;">
+    <div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto"><pre> <span class="pl-kos">&lt;</span><span class="pl-ent">jace</span> <span class="pl-c1">local-jace</span>="<span class="pl-s">YourJSONData</span>"<span class="pl-kos">&gt;</span>@{{example}} @{{example2}}.<span class="pl-kos">&lt;/</span><span class="pl-ent">jace</span><span class="pl-kos">&gt;</span></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" <jade local-jace=&quot;YourJSONData&quot;>@{{example}} @{{example2}}.</jace>" tabindex="0" role="button" style="display: inherit;">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
     <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
 </svg>
@@ -77,7 +77,7 @@
 }; 
 </script>
         
-         <json local-json="YourJSONData">@{{example}} @{{example2}}.</json>
+         <jade local-jace="YourJSONData">@{{example}} @{{example2}}.</jade>
       
         
         
@@ -89,9 +89,9 @@
     
       <h3> Display JSON from API / URL</h3>
     
-   <p data-sourcepos="69:1-69:117" dir="auto">Instead of using a <code>&lt;json&gt;</code> tag with the attribute <code>local-json</code> use <code>fetch-json</code> with a URL to JSON data.</p>
+   <p data-sourcepos="69:1-69:117" dir="auto">Instead of using a <code>&lt;jace&gt;</code> tag with the attribute <code>local-jace</code> use <code>fetch-jace</code> with a URL to JSON data.</p>
     
-    <p data-sourcepos="71:1-71:92" dir="auto">Note:  fetched JSON data will be returned inside of a nested JSON object called <code>json</code>.</p>
+    <p data-sourcepos="71:1-71:92" dir="auto">Note:  fetched JSON data will be returned inside of a nested JSON object called <code>jace</code>.</p>
     
     
     <p data-sourcepos="73:1-73:24" dir="auto">Example of usage below!</p>
@@ -99,8 +99,8 @@
     
     
     
-    <div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">json</span> <span class="pl-c1">fetch-json</span>="<span class="pl-s">https://api.github.com/users/MarketingPipeline/repos</span>"<span class="pl-kos">&gt;</span> All of MarketingPipeline's public repos - {{#json}} Repo title {{name}} <span class="pl-kos">&lt;</span><span class="pl-ent">b</span><span class="pl-kos">&gt;</span>Description<span class="pl-kos">&lt;/</span><span class="pl-ent">b</span><span class="pl-kos">&gt;</span> {{description}} <span class="pl-kos">&lt;</span><span class="pl-ent">b</span><span class="pl-kos">&gt;</span>Stars<span class="pl-kos">&lt;/</span><span class="pl-ent">b</span><span class="pl-kos">&gt;</span>: {{stargazers_count}} Repo URL <span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>="<span class="pl-s">{{url}}</span>"<span class="pl-kos">&gt;</span>Click to view!<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">br</span>/&gt;{{/json}}<span class="pl-kos">&lt;/</span><span class="pl-ent">json</span><span class="pl-kos">&gt;</span> </pre><div class="zeroclipboard-container position-absolute right-0 top-0">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<json fetch-json=&quot;https://api.github.com/users/MarketingPipeline/repos&quot;> All of MarketingPipeline's public repos - {{#json}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href=&quot;{{url}}&quot;>Click to view!</a><br/>{{/json}}</json> " tabindex="0" role="button" style="display: inherit;">
+    <div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">jace</span> <span class="pl-c1">fetch-jace</span>="<span class="pl-s">https://api.github.com/users/MarketingPipeline/repos</span>"<span class="pl-kos">&gt;</span> All of MarketingPipeline's public repos - {{#jace}} Repo title {{name}} <span class="pl-kos">&lt;</span><span class="pl-ent">b</span><span class="pl-kos">&gt;</span>Description<span class="pl-kos">&lt;/</span><span class="pl-ent">b</span><span class="pl-kos">&gt;</span> {{description}} <span class="pl-kos">&lt;</span><span class="pl-ent">b</span><span class="pl-kos">&gt;</span>Stars<span class="pl-kos">&lt;/</span><span class="pl-ent">b</span><span class="pl-kos">&gt;</span>: {{stargazers_count}} Repo URL <span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>="<span class="pl-s">{{url}}</span>"<span class="pl-kos">&gt;</span>Click to view!<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">br</span>/&gt;{{/jace}}<span class="pl-kos">&lt;/</span><span class="pl-ent">jace</span><span class="pl-kos">&gt;</span> </pre><div class="zeroclipboard-container position-absolute right-0 top-0">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<jade fetch-jace=&quot;https://api.github.com/users/MarketingPipeline/repos&quot;> All of MarketingPipeline's public repos - {{#jace}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href=&quot;{{url}}&quot;>Click to view!</a><br/>{{/jace}}</jade> " tabindex="0" role="button" style="display: inherit;">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
     <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
 </svg>
@@ -116,7 +116,7 @@
         <b> Showing all of <a href="https://github.com/MarketingPipeline">MarketingPipeline's </a>public repos from GitHub API via JSON Tag </b> <br><br>
      
         
-        <json fetch-json="https://api.github.com/users/MarketingPipeline/repos"> All of MarketingPipeline's public repos <br> {{#json}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href="{{url}}">Click to view!</a><br/>{{/json}}</json> 
+        <jade fetch-jace="https://api.github.com/users/MarketingPipeline/repos"> All of MarketingPipeline's public repos <br> {{#jace}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href="{{url}}">Click to view!</a><br/>{{/jace}}</jace> 
         
         
       </details>
