@@ -1,7 +1,7 @@
 # JSON-Tag
  
 <p align="center">
-  <img height="400" src="https://imgur.com/oQgTNF3.png" />
+  <img height="400" alt="JSON Tag Repo Banner" src="https://user-images.githubusercontent.com/86180097/201008829-13b55fa3-7016-4eeb-aa9b-3acc3e884e21.png" />
 </p>
                                                                      
 
@@ -248,5 +248,5 @@ participate in this project.
 ## License ![GitHub](https://img.shields.io/github/license/MarketingPipeline/JSON-Tag)
 
 This project is licensed under the GPL-3.0 License - see the
-[LICENSE.md](https://github.com/MarketingPipeline/JSON-Tag/blob/main/LICENSE) file for
+[LICENSE](https://github.com/MarketingPipeline/JSON-Tag/blob/main/LICENSE) file for
 details.
