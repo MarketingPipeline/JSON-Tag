@@ -7,7 +7,7 @@
 
 
    <p align="center">
-    The easiest way to show JSON data on your website locally or from a API etc!
+ The easiest way to show JSON data on your website locally or from a API etc & <b>LOTS</b> more!
   
   <br>
   <small> <b><i>Show your support!</i> </b></small>
@@ -22,7 +22,7 @@
 
 
 
-Easily render data from JSON locally or from a API / URL (no JavaScript experience needed) on your website inside of a json tag. 
+Easily render data from JSON locally or from a API / URL (no JavaScript experience needed) & **LOTS** more on your website inside of a json tag. 
 
 
 
@@ -73,7 +73,7 @@ Note:  fetched JSON data will be returned inside of a nested JSON object called 
 Example of usage below! 
 
 ```html
-<json fetch-json="https://randomusesr.me/api/?gender=female&results=10">@{{json.results.1.name.title}} {{#json.results}} Your name is {{name.title}}  <br/>{{/json.results}}</json> 
+<json fetch-json="https://api.github.com/users/MarketingPipeline/repos"> All of MarketingPipeline's public repos <br> {{#json}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href="{{url}}">Click to view!</a><br/>{{/json}}</json> 
 ```
 
 <br>
@@ -183,19 +183,63 @@ Note:  fetched JSON data will be returned inside of a nested JSON object called 
 You can then access it via object key name like the example below - 
 
 ```html
-<test fetch-json="https://randomuser.me/api/?gender=female&results=10">{{#json.list}} Your name is {{title}}  <br/>{{/json.list}}</test>
+<test fetch-json="https://YOUR_URL_HERE.com">{{#json.list}} Your name is {{title}}  <br/>{{/json.list}}</test>
 ```
 
 </details>
 
+ 
+ 
+## Functions
+ 
+ 
+ 
+<details>
+<summary>
+ How to use <b><i>Functions</b></i> with <i><b>JSON Tag</b></i>:
+</summary>
+
+<br>
+
+To use a JSON key as a function - set the JSON value key as a function like the example(s) below - 
+
+```js
+ <script>
+let FunctionExample = {
+  title: "Joe",
+  calc: function () {
+    return 2 + 4;
+  },
+   bold: function () {
+    return function (text) {
+      return `<b> ${text} was bolded </b>`;
+    }
+   },
+};
+ </script>
+```
+
+ and then use the function(s) in your HTML document - example below.
+ 
+```html
+<json local-json="FunctionExample">Calculate function - {{title}} spends {{calc}}. Bold function - {{#bold}} {{title}}.{{/bold}}</json>
+```      
+ 
+ </details>
+ 
+
+## Notice
+ 
+ <b><i>JSON Tag</i></b> uses [Mustache](http://mustache.github.io/) templating language which is compiled with [Hogan.js](https://github.com/twitter/hogan.js/). For information
+on Mustache, see the [manpage](http://mustache.github.io/mustache.5.html) and
+the [spec](https://github.com/mustache/spec).
+
+**psstt** - you might find another cool function that <b><i>JSON Tag</b></i> is capable of via Mustache templating language, if you think you came across something & it should be documented or added, feel free to submit a PR or feature request, etc!
+ 
 
 ## Contributing ![GitHub](https://img.shields.io/github/contributors/MarketingPipeline/Markdown-Tag)
 
 Want to improve this? Create a pull request with detailed changes / improvements! If approved you will be added to the list of contributors of this awesome project!
-
-
-Looking for a task to work on? Check the tasks that need improved in the [to-do](https://github.com/MarketingPipeline/Markdown-Tag/blob/main/.github/U.md) list.
-
 
 See also the list of
 [contributors](https://github.com/MarketingPipeline/Markdown-Tag/graphs/contributors) who
