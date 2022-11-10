@@ -22,7 +22,7 @@
 
 
 
-Easily render data from JSON locally or from a API / URL (no JavaScript experience needed) & **LOTS** more on your website inside of a json tag. 
+<b><i>JSON Tag</b></i> easily allows you to render JSON data from a API / URL or locally inside your HTML document with no JavaScript experience needed & **LOTS** more on your website inside of a json tag. 
 
 
 
@@ -59,7 +59,7 @@ Create a ```<json>``` tag with the attribute ```local-json``` with your variable
 
 include this [script](https://github.com/MarketingPipeline/JSON-Tag/blob/main/dist/json-tag.min.js) in your HTML document. 
          
-    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/JSON-Tag@v1.0.0/dist/json-tag.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/JSON-Tag@v1.0.0/dist/json-tag.min.js" type="module"></script> 
 
 
 <br>
@@ -183,7 +183,7 @@ Note:  fetched JSON data will be returned inside of a nested JSON object called 
 You can then access it via object key name like the example below - 
 
 ```html
-<test fetch-json="https://YOUR_URL_HERE.com">{{#json.list}} Your name is {{title}}  <br/>{{/json.list}}</test>
+<json fetch-json="https://YOUR_URL_HERE.com">{{#json.list}} Your name is {{title}}  <br/>{{/json.list}}</json>
 ```
 
 </details>
