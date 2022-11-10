@@ -57,9 +57,10 @@ Create a ```<json>``` tag with the attribute ```local-json``` with your variable
 
 
 
-include this [script](https://github.com/MarketingPipeline/Markdown-Tag/blob/main/markdown-tag.js) at the <b>bottom</b> of your HTML document.
+include this [script](https://github.com/MarketingPipeline/Markdown-Tag/blob/main/markdown-tag.js) in your HTML document. 
          
-    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag@v1.0.0/markdown-tag.js"></script> 
+
 
 <br>
 
@@ -186,14 +187,6 @@ You can then access it via object key name like the example below -
 ```
 
 </details>
-
-
-## Handling untrusted content
-
-By default, <b><i>JSON Tag</i></b> does not sanitize the content you provide, since in most use cases the content is trusted.
-
-Any other content provided from user's on your website etc. Should be sanitized before adding it to prevent XSS. 
-
 
 
 ## Contributing ![GitHub](https://img.shields.io/github/contributors/MarketingPipeline/Markdown-Tag)
