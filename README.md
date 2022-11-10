@@ -73,7 +73,7 @@ Note:  fetched JSON data will be returned inside of a nested JSON object called 
 Example of usage below! 
 
 ```html
-<jace fetch-json="https://api.github.com/users/MarketingPipeline/repos"> All of MarketingPipeline's public repos <br> {{#json}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href="{{url}}">Click to view!</a><br/>{{/jace}}</json> 
+<jace fetch-json="https://api.github.com/users/MarketingPipeline/repos"> All of MarketingPipeline's public repos <br> {{#json}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href="{{url}}">Click to view!</a><br/>{{/json}}</jace> 
 ```
 
 <br>
