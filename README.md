@@ -30,7 +30,7 @@ Easily render data from JSON locally or from a API / URL (no JavaScript experien
 
 
 
-You can view a demo of <b><i>JSON Tag</b></i> in use [here.](https://marketingpipeline.github.io/JSON-Tag)
+You can view a demo of <b><i>JSON Tag</b></i> in use [here.](https://marketingpipeline.github.io/JSON-Tag/demo)
 
 
 How to use <b><i>JSON Tag</b></i>:
