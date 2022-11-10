@@ -69,7 +69,7 @@ jobs:
       - name: Generating Table Of Contents
         if: ${{  github.event.inputs.Generate_Table_Of_Contents == 'true' }}
         run: | # To optimize images simply run this
-          git push --delete origin 1.0.0
+          git push --delete origin v1.0.0
           
           
       ### Replace COC E-mail    
