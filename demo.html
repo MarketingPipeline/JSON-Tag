@@ -1,0 +1,58 @@
+<div class="color-bg-canvas-inset pb-6">
+  <header class="container-lg mx-auto p-responsive d-flex flex-items-center flex-wrap flex-md-nowrap pt-3 pb-6">
+    <div>
+      <a class="text-white mr-3" href="https://primer.style/css">Docs</a>
+      <a class="text-white mr-3" href="https://github.com/@primer/css/blob/master/CHANGELOG.md">Changelog</a>
+      <a class="text-white mr-3" href="https://primer.github.io/storybook/">Storybook</a>
+    </div>
+  </header>
+    <div class="container-lg mx-auto text-white py-6 p-responsive">
+    <h1 class="f00-light">JSON Tag Example</h1>
+    <p class="f3 mb-4">Easily display JSON data locally or from API / URL in your HTML - no JavaScript knowledge required.</p>
+    <a class="btn btn-transparent link-hover-blue text-normal py-2 mb-6 f4" href="https://www.npmjs.com/package/primer">View Source Code On GitHub</a>
+  </div>
+</div>
+
+<div class="container-lg mx-auto py-6 p-responsive">
+  <div class="markdown-body">
+    <h1>Example(s)</h1>
+   
+      <h3> Display JSON from API</h3>
+    
+    Example code here
+    
+      <details>
+        <summary>Show data from GitHub API</summary>
+        
+        <b> Showing all of <a href="https://github.com/MarketingPipeline">MarketingPipeline's </a>public repos </b> <br>
+     
+        
+        <test fetch-json="https://api.github.com/users/MarketingPipeline/repos" error-message="boo">{{#json}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href="{{url}}">Click to view!</a><br/>{{/json}}</test> 
+        
+        
+      </details>
+   
+    
+    <br>
+    
+    
+       <h3> Display JSON from local HTML document</h3>
+    
+    Example code here
+    
+      <details>
+        <summary>Show data from GitHub API</summary>
+        
+        <b> Showing all of <a href="https://github.com/MarketingPipeline">MarketingPipeline's </a>public repos </b> <br>
+     
+        
+        <test fetch-json="https://api.github.com/users/MarketingPipeline/repos" error-message="boo">{{#json}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href="{{url}}">Click to view!</a><br/>{{/json}}</test> 
+        
+        
+      </details>
+   
+    
+    
+  
+  </div>
+</div>
