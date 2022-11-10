@@ -61,7 +61,7 @@ include this [script](https://github.com/MarketingPipeline/Markdown-Tag/blob/mai
          
     <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
 
-
+<br>
 
 How to fetch <b><i>JSON data</b></i> from a <b>API / URL</b>:
 
@@ -75,6 +75,41 @@ Example of usage below!
 <json fetch-json="https://randomusesr.me/api/?gender=female&results=10">@{{json.results.1.name.title}} {{#json.results}} Your name is {{name.title}}  <br/>{{/json.results}}</json> 
 ```
 
+<br>
+
+How to prevent <b>Flash of Unstyled Content</b>:
+
+<b><i>JSON Tag</i></b> adds a <code>json-rendered</code> attribute after the element(s) content(s) has been rendered to HTML. This allows you to style / hide unrendered content until it is rendered however you please (via JavaScript page loader, CSS or etc), here is a basic example of hiding un-rendered content using a <code>:not()</code> CSS selector.
+
+> Note: by default, if an error occurs a <code>json-error</code> attribute will be added to the element. 
+
+```css
+json:not([json-rendered]) { display: none }
+```
+
+
+<br>
+
+
+How to customize <b>Error Messages</b>:
+
+<b><i>JSON Tag</i></b> by default will return any errors inside of the JSON tag. To customize / use your own error message. Simply use a ```error-message``` attribute like the following example below - 
+
+```html
+<json error-message="Your Message Here!"></json>
+```
+
+<br>
+
+How to handle <b>Errors</b>:
+
+<b><i>JSON Tag</i></b> adds a <code>json-error</code> attribute if the element(s) content(s) has **NOT** been successfully rendered to HTML. This allows you to style / hide unrendered content however you please (via JavaScript, CSS or etc), here is a basic example of hiding un-rendered JSON content using a <code>:has()</code> CSS selector.
+
+```css
+json:has(json-error) {
+  display:none;
+}
+```
 
 ## Using For Loops
 
@@ -151,6 +186,13 @@ You can then access it via object key name like the example below -
 ```
 
 </details>
+
+
+## Handling untrusted content
+
+By default, <b><i>JSON Tag</i></b> does not sanitize the content you provide, since in most use cases the content is trusted.
+
+Any other content provided from user's on your website etc. Should be sanitized before adding it to prevent XSS. 
 
 
 
