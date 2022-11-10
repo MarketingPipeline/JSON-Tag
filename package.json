@@ -1,16 +1,16 @@
 {
   "type": "module",
-  "name": "@MarketingPipeline/JSON-Tag",
+  "name": "@MarketingPipeline/Jace-Tag",
   "version": "1.0.0",
-  "description": "Easily render data from JSON locally or from a API / URL (no JavaScript experience needed) & LOTS more on your website inside of a <json> tag.",
+  "description": "Easily render data from JSON locally or from a API / URL (no JavaScript experience needed) & LOTS more on your website inside of a <jace> tag.",
   "license": "GPL-3.0",
-  "main": "./dist/json-tag.min.js",
+  "main": "./dist/jace-tag.min.js",
   "author": {
     "name": "MarketingPipeline",
     "url": "https://github.com/MarketingPipeline"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MarketingPipeline/JSON-Tag.git"
+    "url": "https://github.com/MarketingPipeline/Jace-Tag.git"
   }
 }
