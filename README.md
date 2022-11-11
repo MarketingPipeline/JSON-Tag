@@ -73,7 +73,7 @@ Note:  fetched JSON data will be returned inside of a nested JSON object called 
 Example of usage below! 
 
 ```html
-<json fetch-json="https://api.github.com/users/MarketingPipeline/repos"> All of MarketingPipeline's public repos <br> {{#json}} Repo title {{name}} <b>Description</b> {{description}} <b>Stars</b>: {{stargazers_count}} Repo URL <a href="{{url}}">Click to view!</a><br/>{{/json}}</json> 
+<json fetch-json="https://api.github.com/users/MarketingPipeline/repos"> Showing a repo from MarketingPipeline<br> Repo title {{json.0.name}} <b>Description</b> {{json.0.description}} <b>Stars</b>: {{json.0.stargazers_count}} Repo URL <a href="{{json.0.url}}">Click to view!</a><br/></json>  
 ```
 
 <br>
