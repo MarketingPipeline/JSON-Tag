@@ -22,7 +22,7 @@
 
 
 
-<b><i>JSON Tag</b></i> easily allows you to render JSON data from a API / URL or locally inside your HTML document with no JavaScript experience needed & **LOTS** more on your website inside of a json tag. 
+<b><i>JSON Tag</b></i> allows you to easily render JSON data from a API / URL or locally inside your HTML document with no JavaScript experience needed & **LOTS** more on your website inside of a ```<json>``` tag. 
 
 
 
@@ -196,7 +196,7 @@ You can then access it via object key name like the example below -
  
 <details>
 <summary>
- How to use <b><i>Functions</b></i> with <i><b>JSON Tag</b></i>:
+ How to use <b><i>functions</b></i> with <i><b>JSON Tag</b></i>:
 </summary>
 
 <br>
