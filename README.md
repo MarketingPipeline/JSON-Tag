@@ -7,7 +7,7 @@
 
 
    <p align="center">
- The easiest way to show JSON data on your website locally or from a API etc & <b>LOTS</b> more!
+ The easiest way to show JSON data in HTML & LOTS more!
   
   <br>
   <small> <b><i>Show your support!</i> </b></small>
@@ -22,7 +22,12 @@
 
 
 
-<b><i>JSON Tag</b></i> allows you to easily render JSON data from a API / URL or locally inside your HTML document with no JavaScript experience needed & **LOTS** more on your website inside of a ```<json>``` tag. 
+<b><i>JSON Tag</b></i> allows you to -
+- fetch & easily render JSON data from a API / URL
+- render JSON stored directly inside your HTML document
+- and **LOTS** more
+ 
+Directly inside of a HTML document using a  ```<json>``` tag - with no JavaScript experience needed.
 
 
 
